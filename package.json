@@ -1,5 +1,5 @@
 {
-  "name": "SecureEduCrypt",
+  "name": "secureeducrypt",
   "version": "1.0.0",
   "description": "Protocole officiel de SecureEduMail permettant de chiffrer les données.",
   "main": "dist/index.js",
