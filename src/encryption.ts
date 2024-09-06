@@ -39,7 +39,7 @@ function generateShuffledMap(text: string): string[] {
     return seededShuffle(seed, [...charMap]);
 }
 
-export class AdvancedSecureCrypt {
+export class SecureEduCryptAlgorithm {
     private static mapChar(char: string, from: string[], to: string[]): string {
         const index = from.indexOf(char);
         return index !== -1 ? to[index] : char;
@@ -47,11 +47,11 @@ export class AdvancedSecureCrypt {
 
     encrypt(text: string, password: string): string {
         const shuffledCharMap = generateShuffledMap(password);
-        return text.split('').map(char => AdvancedSecureCrypt.mapChar(char, charMap, shuffledCharMap)).join('');
+        return text.split('').map(char => SecureEduCryptAlgorithm.mapChar(char, charMap, shuffledCharMap)).join('');
     }
 
     decrypt(encryptedText: string, password: string): string {
         const shuffledCharMap = generateShuffledMap(password);
-        return encryptedText.split('').map(char => AdvancedSecureCrypt.mapChar(char, shuffledCharMap, charMap)).join('');
+        return encryptedText.split('').map(char => SecureEduCryptAlgorithm.mapChar(char, shuffledCharMap, charMap)).join('');
     }
 }
