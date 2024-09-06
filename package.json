@@ -1,6 +1,6 @@
 {
   "name": "secureeducrypt",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Protocole officiel de SecureEduMail permettant de chiffrer les données.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
